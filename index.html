@@ -6,47 +6,51 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
         <title>Commencement</title>
-        <link rel="stylesheet" href="style.css">  
+        <link rel="stylesheet" href="css/style.css">  
         <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     </head>
-   <body>
-       <div class="wrapper">
-    <h1>Hello there</h1>         
+   <body>       
 </div>
       <div class="section-bvn contenue-cacher">
+          <video autoplay="autoplay" muted="" loop="infinite" src="medias/video-pluie.mp4"></video>
         <div class="contenue">
+
             <ul class="fly-in-text">
-                 <li>I</li>
-                 <li>N</li>
-                 <li>T</li>
+                 <li>P</li>
                  <li>R</li>
-                 <li>O</li>
+                 <li>E</li>
+                 <li>F</li>
+                 <li>A</li>
+                 <li>C</li>
+                 <li>E</li>
+                 
             </ul>
-             <a href="#" class="enter-button">CONTINUER</a>
+             <a href="html/menu.html" class="Bouton"><u>Commencer</u>
+             </a>
             </div>
-           </div>
+           
                     
 <!--Effet animation du texte -->
 
-                    <script type="text/javascript">
-                    $(function() {
-                            var Sectionbvn = $('.section-bvn'),
-                            enterButton = Sectionbvn.find('.enter-button');
+<script type="text/javascript">
+    $(function() {
+            var Sectionbvn = $('.section-bvn'),
+            Bouton = Sectionbvn.find('.Bouton');
 
 
-                            setTimeout(function() {
-                                Sectionbvn.removeClass('contenue-cacher');
-                            },800);
-                            
-                            enterButton.on('click', function(e) {
-                                e.preventDefault();
-                                Sectionbvn.addClass('contenue-cacher').fadeOut;
-                            
-                         });
-                        });
-                    
-                     </script> 
+            setTimeout(function() {
+                Sectionbvn.removeClass('contenue-cacher');
+            },800);
             
+            enterButton.on('click', function(e) {
+                e.preventDefault();
+                Sectionbvn.addClass('contenue-cacher').fadeOut;
+            
+         });
+        });
+    
+     </script> 
+
 
      
    </body>
